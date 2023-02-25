@@ -1,0 +1,17 @@
+<template>
+   <lightning-card>
+      <lightning-button variant="brand" label="click" onclick={starthandle} class="slds-m-left_x-small"> </lightning-button>
+
+      <template if:true={isclick}>
+         <c-modal-page
+         onclose={closehandler}>
+      <p slot="title">my name is sai</p>
+      </c-modal-page>
+     </template>
+     <div>{msg}</div>
+  
+
+   </lightning-card>
+   
+   
+</template>
